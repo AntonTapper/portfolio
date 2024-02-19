@@ -11,13 +11,16 @@
     <div id="header">
         <div class="container">
             <nav>
-                <img src="images/logo.png" class="logo" alt="">
-                <ul>
+                <!-- <img src="images/logo.png" class="logo" alt=""> -->
+                <h1 class="logo">A<h1 class="logo logo2">nton.</h1></h1>
+                <ul id="sidemenu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Software Developer</p>
@@ -118,7 +121,7 @@
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit">Submit</button>
+                    <button type="submit" class="btn btn2">Submit</button>
                 </form>
             </div>
         </div>
@@ -141,6 +144,16 @@
             document.getElementById(tabname).classList.add("active-tab");
         }
 
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openMenu(){
+            sidemenu.style.right = "0";
+        }
+        function closeMenu(){
+            sidemenu.style.right = "-200px";
+        }
     </script>
 </body>
 </html>
