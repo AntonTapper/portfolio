@@ -1,0 +1,19 @@
+body {
+    background-color: gray;
+}
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+    text-decoration: none;
+    flex-direction: column;
+}
+.link-tag {
+    font-size: 100px;
+}
+h1 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 50px
+}
